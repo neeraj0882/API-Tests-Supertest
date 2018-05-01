@@ -1,0 +1,28 @@
+# top-most EditorConfig file
+root = true
+
+
+[{test/**.js, utils/**.js}]
+indent_style = space
+indent_size = 2
+end_of_line = none
+insert_final_newline = none
+trim_trailing_whitespace = none
+
+
+
+[test/**.json]
+indent_style = none
+indent_size = none
+end_of_line = none
+insert_final_newline = none
+trim_trailing_whitespace = none
+
+
+
+[test/**.xml]
+indent_style = none
+indent_size = none
+end_of_line = none
+insert_final_newline = none
+trim_trailing_whitespace = none

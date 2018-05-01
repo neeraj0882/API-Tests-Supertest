@@ -1,0 +1,6 @@
+{
+  "http": {
+    "timeout": 3000,
+    "base-url": "http://preview.airwallex.com:30001"
+  }
+}

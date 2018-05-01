@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.073" tests="13" failures="1">
+  <testsuite name="Root Suite" timestamp="2018-05-01T11:28:53" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="200 POST Req" timestamp="2018-05-01T11:28:54" tests="6" file="/Users/saxenan3/myprojects/apiAutomation/api-test/test/tests/POST/HappyPath/200.js" failures="1" time="0.9440000000000001">
+    <testcase name="200 POST Req 200 Response: should receive a 200 response when correct parameters are passed for country US and payment method LOCAL" time="0.187" classname="200 Response: should receive a 200 response when correct parameters are passed for country US and payment method LOCAL">
+    </testcase>
+    <testcase name="200 POST Req 200 Response: should receive a 200 response when correct parameters are passed for country AU and payment method LOCAL" time="0.16" classname="200 Response: should receive a 200 response when correct parameters are passed for country AU and payment method LOCAL">
+    </testcase>
+    <testcase name="200 POST Req 200 Response: should receive a 200 response when correct parameters are passed for country CN and payment method LOCAL" time="0.154" classname="200 Response: should receive a 200 response when correct parameters are passed for country CN and payment method LOCAL">
+      <failure><![CDATA[Error: Higher-level error. {"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+    at test/tests/POST/HappyPath/200.js:84:19
+    at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (node_modules/bluebird/js/release/async.js:17:14)]]></failure>
+    </testcase>
+    <testcase name="200 POST Req 200 Response: should receive a 200 response when correct parameters are passed for country US and payment method SWIFT" time="0.148" classname="200 Response: should receive a 200 response when correct parameters are passed for country US and payment method SWIFT">
+    </testcase>
+    <testcase name="200 POST Req 200 Response: should receive a 200 response when correct parameters are passed for country AU and payment method SWIFT" time="0.146" classname="200 Response: should receive a 200 response when correct parameters are passed for country AU and payment method SWIFT">
+    </testcase>
+    <testcase name="200 POST Req 200 Response: should receive a 200 response when correct parameters are passed for country CN and payment method SWIFT" time="0.149" classname="200 Response: should receive a 200 response when correct parameters are passed for country CN and payment method SWIFT">
+    </testcase>
+  </testsuite>
+  <testsuite name="400 POST Req" timestamp="2018-05-01T11:28:55" tests="3" file="/Users/saxenan3/myprojects/apiAutomation/api-test/test/tests/POST/MandatoryFields/AccountName/400.js" failures="0" time="0.45799999999999996">
+    <testcase name="400 POST Req 400 Response: should receive a 400 response when mandatory parameters - account_name is not passed" time="0.159" classname="400 Response: should receive a 400 response when mandatory parameters - account_name is not passed">
+    </testcase>
+    <testcase name="400 POST Req 400 Response: should receive a 400 response when mandatory parameters - account name length&lt;2" time="0.153" classname="400 Response: should receive a 400 response when mandatory parameters - account name length&lt;2">
+    </testcase>
+    <testcase name="400 POST Req 400 Response: should receive a 400 response when mandatory parameters - account name length&gt;10" time="0.146" classname="400 Response: should receive a 400 response when mandatory parameters - account name length&gt;10">
+    </testcase>
+  </testsuite>
+  <testsuite name="400 POST Req" timestamp="2018-05-01T11:28:55" tests="2" file="/Users/saxenan3/myprojects/apiAutomation/api-test/test/tests/POST/MandatoryFields/CountryCode/400.js" failures="0" time="0.321">
+    <testcase name="400 POST Req 400 Response: should receive a 400 response when mandatory parameters - country code is not passed" time="0.163" classname="400 Response: should receive a 400 response when mandatory parameters - country code is not passed">
+    </testcase>
+    <testcase name="400 POST Req 400 Response: should receive a 400 response when mandatory parameters - country code is incorrect" time="0.158" classname="400 Response: should receive a 400 response when mandatory parameters - country code is incorrect">
+    </testcase>
+  </testsuite>
+  <testsuite name="400 POST Req" timestamp="2018-05-01T11:28:55" tests="2" file="/Users/saxenan3/myprojects/apiAutomation/api-test/test/tests/POST/MandatoryFields/PaymentMethod/400.js" failures="0" time="0.35">
+    <testcase name="400 POST Req 400 Response: should receive a 400 response when mandatory parameters - payment_method is not passed" time="0.173" classname="400 Response: should receive a 400 response when mandatory parameters - payment_method is not passed">
+    </testcase>
+    <testcase name="400 POST Req 400 Response: should receive a 400 response when mandatory parameters - payment_method is incorrect passed" time="0.177" classname="400 Response: should receive a 400 response when mandatory parameters - payment_method is incorrect passed">
+    </testcase>
+  </testsuite>
+</testsuites>
