@@ -3,7 +3,7 @@
 Assumption:nodejs is installed
 
 Instructions:
-npm install to install relevant node packages
+RUN npm install to install relevant node packages
 
 To Run the tests, execute the following from terminal from the project folder
 npm test
